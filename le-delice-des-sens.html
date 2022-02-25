@@ -10,185 +10,222 @@
         <title>Ohmyfood - Le délice des sens</title>
     </head>
     <body>
-        <header>
-            <a href="./index.html">
+        <header class="header">
+            <a href="./index.html" class="header__backButton">
                 <i class="fas fa-arrow-left"></i>
             </a>
-            <a href="./index.html">
+            <a href="./index.html" class="header__logo">
                 <img src="img/logo/ohmyfood@2x.svg" alt="Ohmyfood logo">
             </a>
         </header>
-        <main>
-            <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
-            <div>
-                <div>
-                    <h1>
-                        Le délice des sens
-                    </h1>
-                    <i class="far fa-heart"></i>
-                    <i class="fas fa-heart"></i>
+        <main class="restaurantPage">
+            <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="restaurantPage__img">
+            <div class="restaurantPage__title">
+                <h1>
+                    Le délice des sens
+                </h1>
+                <i class="far fa-heart restaurant__heart--empty"></i>
+                <i class="fas fa-heart restaurant__heart--full"></i>
+            </div>
+            <div class="restaurantPage__menu">
+                <div class="menuCategory">
+                    <h2 class="menuCategory__title">
+                        ENTRÉES
+                    </h2>
+                    <ol>
+                        <li class="menuCard">
+                            <h3 class="menuCard__title">
+                                Tartare de thon
+                            </h3>
+                            <div class="menuCard__details">
+                                <p>
+                                    Assaisonné au yuzu
+                                </p>
+                                <p class="menuCard__price">
+                                    25€
+                                </p>
+                            </div>
+                            <div class="menuCard__checkIcon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </li>
+                        <li class="menuCard">
+                            <h3 class="menuCard__title">
+                                Bouchée de homard croustillant
+                            </h3>
+                            <div class="menuCard__details">
+                                <p>
+                                    Et sa farandole de petits légumes
+                                </p>
+                                <p class="menuCard__price">
+                                    35€
+                                </p>
+                            </div>
+                            <div class="menuCard__checkIcon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </li>
+                        <li class="menuCard">
+                            <h3 class="menuCard__title">
+                                Velouté de cèpes
+                            </h3>
+                            <div class="menuCard__details">
+                                <p>
+                                    Aux truffes
+                                </p>
+                                <p class="menuCard__price">
+                                    20€
+                                </p>
+                            </div>
+                            <div class="menuCard__checkIcon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="menuCategory">
+                    <h2>
+                        PLATS
+                    </h2>
+                    <ol>
+                        <li class="menuCard">
+                            <h3 class="menuCard__title">
+                                Poulet rôti aux herbes de Provence
+                            </h3>
+                            <div class="menuCard__details">
+                                <p>
+                                    Et sa crème de truffe
+                                </p>
+                                <p class="menuCard__price">
+                                    40€
+                                </p>
+                            </div>
+                            <div class="menuCard__checkIcon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </li>
+                        <li class="menuCard">
+                            <h3 class="menuCard__title">
+                                Langouste rôtie
+                            </h3>
+                            <div class="menuCard__details">
+                                <p>
+                                    Et ses légumes de saison
+                                </p>
+                                <p class="menuCard__price">
+                                    35€
+                                </p>
+                            </div>
+                            <div class="menuCard__checkIcon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </li>
+                        <li class="menuCard">
+                            <h3 class="menuCard__title">
+                                Côte de boeuf Angus
+                            </h3>
+                            <div class="menuCard__details">
+                                <p>
+                                    Et sa purée de panais
+                                </p>
+                                <p class="menuCard__price">
+                                    44€
+                                </p>
+                            </div>
+                            <div class="menuCard__checkIcon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="menuCategory">
+                    <h2>
+                        DESSERTS
+                    </h2>
+                    <ol>
+                        <li class="menuCard">
+                            <h3 class="menuCard__title">
+                                Farandole de desserts
+                            </h3>
+                            <div class="menuCard__details">
+                                <p>
+                                    Du chef
+                                </p>
+                                <p class="menuCard__price">
+                                    18€
+                                </p>
+                            </div>
+                            <div class="menuCard__checkIcon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </li>
+                        <li class="menuCard">
+                            <h3 class="menuCard__title">
+                                Crème brulée
+                            </h3>
+                            <div class="menuCard__details">
+                                <p>
+                                    Revisitée
+                                </p>
+                                <p class="menuCard__price">
+                                    22€
+                                </p>
+                            </div>
+                            <div class="menuCard__checkIcon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </li>
+                        <li class="menuCard">
+                            <h3 class="menuCard__title">
+                                Tiramisu
+                            </h3>
+                            <div class="menuCard__details">
+                                <p>
+                                    À la noisette
+                                </p>
+                                <p class="menuCard__price">
+                                    23€
+                                </p>
+                            </div>
+                            <div class="menuCard__checkIcon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
             </div>
-            <div>
-                <h2>
-                    ENTRÉES
-                </h2>
-                <ol>
-                    <li>
-                        <h3>
-                            Tartare de thon
-                        </h3>
-                        <div>
-                            <p>
-                                Assaisonné au yuzu
-                            </p>
-                            <p>
-                                25€
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>
-                            Bouchée de homard croustillant
-                        </h3>
-                        <div>
-                            <p>
-                                Et sa farandole de petits légumes
-                            </p>
-                            <p>
-                                35€
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>
-                            Velouté de cèpes
-                        </h3>
-                        <div>
-                            <p>
-                                Aux truffes
-                            </p>
-                            <p>
-                                20€
-                            </p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-            <div>
-                <h2>
-                    PLATS
-                </h2>
-                <ol>
-                    <li>
-                        <h3>
-                            Poulet rôti aux herbes de Provence
-                        </h3>
-                        <div>
-                            <p>
-                                Et sa crème de truffe
-                            </p>
-                            <p>
-                                40€
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>
-                            Langouste rôtie
-                        </h3>
-                        <div>
-                            <p>
-                                Et ses légumes de saison
-                            </p>
-                            <p>
-                                35€
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>
-                            Côte de boeuf Angus
-                        </h3>
-                        <div>
-                            <p>
-                                Et sa purée de panais
-                            </p>
-                            <p>
-                                44€
-                            </p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-            <div>
-                <h2>
-                    DESSERTS
-                </h2>
-                <ol>
-                    <li>
-                        <h3>
-                            Farandole de desserts
-                        </h3>
-                        <div>
-                            <p>
-                                Du chef
-                            </p>
-                            <p>
-                                18€
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>
-                            Crème brulée
-                        </h3>
-                        <div>
-                            <p>
-                                Revisitée
-                            </p>
-                            <p>
-                                22€
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <h3>
-                            Tiramisu
-                        </h3>
-                        <div>
-                            <p>
-                                À la noisette
-                            </p>
-                            <p>
-                                23€
-                            </p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-            <div>
+            <div class="restaurantPage__orderButton">
                 <button>
                     Commander
                 </button>
             </div>
         </main>
-        <footer>
-            <img src="img/logo/ohmyfood@2x.svg" alt="Ohmyfood">
-            <a href="#">
-                <i class="fas fa-utensils"></i>
-                Proposer un restaurant
-            </a>
-            <a href="#">
-                <i class="fas fa-hands-helping"></i>
-                Devenir partenaire
-            </a>
-            <a href="#">
-                Mentions légales
-            </a>
-            <a href="#">
-                Contact
-            </a>
+        <footer class="footer">
+            <img src="img/logo/ohmyfood@2x.svg" alt="Ohmyfood" class="footer__logo">
+            <ul class="footer__links">
+                <li>
+                    <a href="#" class="footer__link">
+                        <i class="fas fa-utensils"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">
+                        <i class="fas fa-hands-helping"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">
+                        Mentions légales
+                    </a>
+                <li>
+                </li>
+                    <a href="#" class="footer__link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
         </footer>
     </body>
 </html>
