@@ -8,6 +8,7 @@
         <meta name="description" content="Projet Ohmyfood de OpenClassrooms, site de reservation de repas en ligne"/>
         <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer></script>
         <title>Ohmyfood - La note enchantée</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="header">
@@ -24,187 +25,232 @@
                 <h1>
                     La note enchantée
                 </h1>
-                <i class="far fa-heart restaurant__heart--empty"></i>
-                <i class="fas fa-heart restaurant__heart--full"></i>
+                <div class="restaurant__heart">
+                    <i class="far fa-heart restaurant__heart--empty"></i>
+                    <i class="fas fa-heart restaurant__heart--full"></i>
+                </div>
             </div>
             <div class="restaurantPage__menu">
                 <div class="menuCategory">
                     <h2 class="menuCategory__title">
                         ENTRÉES
                     </h2>
+                    <hr/>
                     <ol>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Ravioles de foie gras
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Accompagnés de leur crème à la truffe
-                                </p>
-                                <p class="menuCard__price">
-                                    25€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Ravioles de foie gras
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Accompagnés de leur crème à la truffe
+                                    </p>
+                                    <p class="menuCard__price">
+                                        25€
+                                    </p>
+                                </div>
                             </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Caviar osciètre
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Sur blini à la farine de blé noir
-                                </p>
-                                <p class="menuCard__price">
-                                    35€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Caviar osciètre
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Sur blini à la farine de blé noir
+                                    </p>
+                                    <p class="menuCard__price">
+                                        35€
+                                    </p>
+                                </div>
                             </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Homard et espuma de potiron
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Mariné aux zestes d'orange
-                                </p>
-                                <p class="menuCard__price">
-                                    20€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Homard et espuma de potiron
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Mariné aux zestes d'orange
+                                    </p>
+                                    <p class="menuCard__price">
+                                        20€
+                                    </p>
+                                </div>
                             </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Foie gras de canard cuit entier
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Confiture de figue et pain toasté
-                                </p>
-                                <p class="menuCard__price">
-                                    35€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Foie gras de canard cuit entier
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Confiture de figue et pain toasté
+                                    </p>
+                                    <p class="menuCard__price">
+                                        35€
+                                    </p>
+                                </div>
                             </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                     </ol>
                 </div>
-                <div class="menuCategory">
-                    <h2>
+                <div class="menuCategory delay-1">
+                    <h2 class="menuCategory__title">
                         PLATS
                     </h2>
+                    <hr/>
                     <ol>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Noix de coquilles Saint-Jacques
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Sur lit de purée de céleri-rave
-                                </p>
-                                <p class="menuCard__price">
-                                    40€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Noix de coquilles Saint-Jacques
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Sur lit de purée de céleri-rave
+                                    </p>
+                                    <p class="menuCard__price">
+                                        40€
+                                    </p>
+                                </div>
                             </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Langoustine poêlée
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Purée de patate douce
-                                </p>
-                                <p class="menuCard__price">
-                                    35€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Langoustine poêlée
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Purée de patate douce
+                                    </p>
+                                    <p class="menuCard__price">
+                                        35€
+                                    </p>
+                                </div>
                             </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Mijoté de queue de boeuf 
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Et riz sauvage aux zestes de citron
-                                </p>
-                                <p class="menuCard__price">
-                                    44€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Mijoté de queue de boeuf 
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Et riz sauvage aux zestes de citron
+                                    </p>
+                                    <p class="menuCard__price">
+                                        44€
+                                    </p>
+                                </div>
                             </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                     </ol>
                 </div>
-                <div class="menuCategory">
-                    <h2>
+                <div class="menuCategory delay-2">
+                    <h2 class="menuCategory__title">
                         DESSERTS
                     </h2>
+                    <hr/>
                     <ol>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Macaron noisette et chocolat
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Glace au caramel brun et sel de Guérande
-                                </p>
-                                <p class="menuCard__price">
-                                    18€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Macaron noisette et chocolat
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Glace au caramel brun et sel de Guérande
+                                    </p>
+                                    <p class="menuCard__price">
+                                        18€
+                                    </p>
                                 </div>
+                            </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Baba au rhum revisité
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Avec son coulis de citron
-                                </p>
-                                <p class="menuCard__price">
-                                    22€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Baba au rhum revisité
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Avec son coulis de citron
+                                    </p>
+                                    <p class="menuCard__price">
+                                        22€
+                                    </p>
+                                </div>
                             </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                         <li class="menuCard">
-                            <h3 class="menuCard__title">
-                                Tarte au citron meringuée 
-                            </h3>
                             <div class="menuCard__details">
-                                <p>
-                                    Déstructurée
-                                </p>
-                                <p class="menuCard__price">
-                                    23€
-                                </p>
+                                <h3 class="menuCard__title">
+                                    Tarte au citron meringuée 
+                                </h3>
+                                <div class="menuCard__description">
+                                    <p>
+                                        Déstructurée
+                                    </p>
+                                    <p class="menuCard__price">
+                                        23€
+                                    </p>
+                                </div>
                             </div>
                             <div class="menuCard__checkIcon">
-                                <i class="fas fa-check"></i>
+                                <div class="wrapIcon">
+                                    <i class="fas fa-check"></i>
+                                </div>
                             </div>
                         </li>
                     </ol>
@@ -217,7 +263,9 @@
             </div>
         </main>
         <footer class="footer">
-            <img src="img/logo/ohmyfood@2x.svg" alt="Ohmyfood" class="footer__logo">
+            <h2 class="footer__title">
+                ohmyfood
+            </h2> 
             <ul class="footer__links">
                 <li>
                     <a href="#" class="footer__link">
@@ -235,8 +283,8 @@
                     <a href="#" class="footer__link">
                         Mentions légales
                     </a>
-                <li>
                 </li>
+                <li>
                     <a href="#" class="footer__link">
                         Contact
                     </a>
