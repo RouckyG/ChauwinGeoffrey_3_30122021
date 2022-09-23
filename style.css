@@ -297,7 +297,6 @@ table {
   display: flex;
   align-items: center;
   background-color: inherit;
-  overflow: hidden;
 }
 .restaurant__heart i {
   font-size: 25px;
@@ -315,6 +314,7 @@ table {
   right: -50%;
   z-index: 1;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .restaurant__heart--empty:hover {
   opacity: 0;
@@ -352,6 +352,7 @@ footer {
 
 .header__backButton {
   font-size: 25px;
+  color: black;
 }
 
 .restaurantPage {
@@ -393,7 +394,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.menuCard {
+.menuCard article {
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 10px #b8b8b8;
@@ -401,6 +402,7 @@ footer {
   justify-content: space-between;
   margin-bottom: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 .menuCard:hover .menuCard__checkIcon {
   animation: slideIn 0.3s ease-in-out;
@@ -423,10 +425,14 @@ footer {
 .menuCard__details {
   padding: 12px;
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .menuCard__title {
   margin-bottom: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .menuCard__description {
