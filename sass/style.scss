@@ -344,6 +344,8 @@ footer {
     width: 0px;
     align-items: center;
     justify-content: center;
+    animation: reverseSlideIn 0.3s ease-in-out;
+
 }
 
 .menuCard__details {
@@ -354,6 +356,12 @@ footer {
 
 .menuCard__title {
     margin-bottom: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menuCard__name {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -386,6 +394,7 @@ footer {
     background-color: white;
     color: $tertiaryColor;
     font-size: 12px;
+    animation: reverseRotate 0.3s ease-in-out backwards;
 }
 
 // menu animation

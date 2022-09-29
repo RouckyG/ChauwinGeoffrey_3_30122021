@@ -52,11 +52,29 @@
     }
 }
 
+@keyframes reverseSlideIn {
+    0% {
+        width: 50px;
+    }
+    100% {
+        width: 0;
+    }
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(180deg);
     }
     100% {
         transform: rotate(0deg);
+    }
+}
+
+@keyframes reverseRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
     }
 }
